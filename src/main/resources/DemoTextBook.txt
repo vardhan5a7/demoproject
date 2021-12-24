@@ -1,0 +1,650 @@
+    Books in .txt format for AI training purposes (twitter.com/theshawwn)
+232 points by sillysaurusx on Oct 25, 2020 | hide | past | favorite | 91 comments
+
+
+	
+JoeDaDude on Oct 25, 2020 | next [–]
+
+There is always Project Gutenberg [1]. I suppose there may be pros and cons to each, with Project Gutenberg being generally older books.
+[1]. https://www.gutenberg.org/
+
+Fun trivia: I once took an NLP class and discovered that I could predict whether a text was written by Edgar Allan Poe or H. G. Wells with ~86% accuracy based on the presence of one word: "whereupon". The language had changed enough in 60 years such that that single word was no longer used.
+
+
+	
+pavlov on Oct 25, 2020 | parent | next [–]
+
+I’ve noticed that “presently” (in the meaning “soon”) is one such indicator for post-WWII English.
+British novels written in the 1950s consistently use “presently” to indicate a short passage of time. In the following decades it seems to have been removed from editors’ style guides and replaced mostly by plain old “soon”.
+
+
+	
+MivLives on Oct 25, 2020 | root | parent | next [–]
+
+Wonder what other words that could be found that do something similar.
+
+	
+milquetoastaf on Oct 25, 2020 | root | parent | next [–]
+
+You may enjoy this article - https://en.wikipedia.org/wiki/Hapax_legomenon
+
+	
+detaro on Oct 25, 2020 | prev | next [–]
+
+Always impressive how the AI community, both inside large companies and not, seems to assume data just exists for them to use, copyright or personal rights be damned.
+
+	
+wyldfire on Oct 25, 2020 | parent | next [–]
+
+Aside: it's interesting to think about the legal ramifications of copyrights in the face of AI. If my AI model "reads" a bunch of text, is the model now a "derived work" of the copyrighted work? Perhaps. But of course humans don't infringe when they watch/listen/read a copyrighted work and it changes their state of mind. Perhaps the model can be said not to infringe if it sufficiently abstracts concepts of the art in question. Typically when tuning a model we include lots of counter-cases to avoid overfitting - to make sure that the model is indeed abstracting concepts.
+
+	
+6gvONxR4sf7o on Oct 25, 2020 | root | parent | next [–]
+
+It is derivative. There’s then a question of whether the derived work is sufficiently transformative to be fair use, which depends on what the model is outputting.
+But yeah that’s separate from the question of whether you properly licensed the data to train on in the first place.
+
+A big chunk of the computing community seems to approach licensing as “I can see it, so I can use it.” (See GPL code used where it shouldn’t be.)
+
+
+	
+naniwaduni on Oct 26, 2020 | root | parent | prev | next [–]
+
+> But of course humans don't infringe when they watch/listen/read a copyrighted work and it changes their state of mind.
+You're not generally distributing, performing, &c. your state of mind. On the other hand, if you then go and generate work based on what you read, then distributing that work certainly can be infringing. Thus "clean room" techniques, where one team reads copyrighted text, writes up a spec (which may then be checked off by lawyers), and then another team, without reading the copyrighted text, implements based off the spec, are sometimes used to attempt to launder copyright taint.
+
+Taking a step back, the fact that well-known authors have infamously declared that they don't read fanfiction as a CYA move against accusations of plagiarism suggests that yes, brains that have read text are widely considered derivative.
+
+
+	
+wyldfire on Oct 27, 2020 | root | parent | next [–]
+
+> You're not generally distributing, performing, &c. your state of mind.
+I don't think I agree. My employer values my contribution in some part as an oracle. People at work ask me questions and I answer them. Those answers come from the sum of my experiences (a biochemical 'model'). Other people more directly conduct public performances of their talent.
+
+If nothing else this will likely blur the lines on what's considered original work.
+
+
+	
+fakedang on Oct 26, 2020 | root | parent | prev | next [–]
+
+Distributing an exact copy or paraphrased content of an original work would be subject to copyright, but if a model just generates its own inferences, I don't see how it's different from say a human generated review.
+
+	
+naniwaduni on Oct 27, 2020 | root | parent | next [–]
+
+Human generated reviews are generally considered derivative. That's why fair use &c. doctrines have factors expressly to enable them.
+
+	
+corobo on Oct 25, 2020 | root | parent | prev | next [–]
+
+I'd imagine one day this will be determined by whether you can copy the resulting 'brain' to another system
+It'll work well until we can upload ourselves to the cloud and we'll have to revisit it
+
+
+	
+curtainsforus on Oct 25, 2020 | root | parent | next [–]
+
+As technical civilization gains power, it becomes able to make things inbetween social categories. Is a simulation of a human brain a person? And one compressed to half-size? And compressed again? And again?
+It's a grains-to-heap problem; eventually, you have to make an ugly choice.
+
+
+	
+6gvONxR4sf7o on Oct 25, 2020 | parent | prev | next [–]
+
+Seriously. At one point I curated a similar dataset to OP, but because it was largely worked to which I didn’t own the copyright, there’s no way in hell I was going to distribute it to others (because that would be doing what that internet library got sued for). I can’t freely distribute the last 20 years of TV and movies just because it’s useful for academic research.
+Hell, unless you paid for it, you shouldn’t even have the collection to train on, whether you distribute it or not.
+
+Effectively, everyone’s focusing on whether your story(/model) is sufficiently transformative from Die Hard to be fair use for you to distribute it, without addressing the complaint that you snuck into the theater too, and held the door for others to follow me in.
+
+
+	
+webmaven on Oct 25, 2020 | parent | prev | next [–]
+
+> Always impressive how the AI community, both inside large companies and not, seems to assume data just exists for them to use, copyright or personal rights be damned.
+Are you objecting to the use of data for training, or to the compilation of training datasets?
+
+
+	
+yodon on Oct 25, 2020 | root | parent | next [–]
+
+> Are you objecting to the use of data for training, or to the compilation of training datasets?
+The GP is objecting to the casualness with which privacy rights and intellectual property rights are ignored by so many in the AI community, not to a choice of whether they object to one or another specific manifestation of how the community is doing so.
+
+[edit added]: Those who would argue "no, there is no casual ignoring of rights", consider for example the official DMCA takedown instructions for the collection [0].
+
+[0] http://the-eye.eu/dmca.mp4
+
+
+	
+PeterisP on Oct 26, 2020 | root | parent | next [–]
+
+IMHO the research community in general is definitely not ignoring intellectual property rights - for natural language processing, there are papers and publication tracks in major conferences specifically about the legal issues of corpora; many researchers are quite painfully aware of all the various legal restrictions that exist.
+However, the legal environment is very different than in the commercial world or consumer piracy, as it generally involves various legal exemptions (differing between locales) that do allow such usage. For example, I work in NLP research on aspects that involve handling large corpora of copyrighted text. It's easier to do it with cooperation of the publishers for various practical reasons, however, we still can and do use also the works of the publishers who would refuse to grant any permission, because local copyright law has specific exceptions that allows the usage these works for noncommercial research purposes. Doing so is not ignoring their rights, their rights are not violated but rather they are limited; their exclusivity right (privilege would be a more appropriate word) to make copies is not absolute. There are even some countries with explicit legal duty for the publishers to provide digital versions of their works to national corpora where they will be used for (among other things) machine learning models.
+
+The specific consequence, however, is that we can't legally share the full datasets which we are using with the public, like it was done in the original post with this particular dataset, as that would be a violation of the publishers' commercial rights; we can provide them to specific researchers for limited noncommercial purposes only. But I can download this dataset or one like this and use it my research legally; just as I can rip up a physical book, scan it, make a digital copy and OCR it, and use it in a research corpus (with copies distributed to other researchers) even if the publisher disapproves.
+
+
+	
+nix23 on Oct 25, 2020 | root | parent | prev | next [–]
+
+The question is..if a AI reads a book is it against copyright?
+Or is the trained model a derived work of those books?
+
+
+	
+mdifrgechd on Oct 25, 2020 | root | parent | next [–]
+
+I can imagine building a model that is a derived work, but I don't see why all models trained on a corpus that contains some text can automatically be thought of as derived from that text in a creative sense. Models like GPT are using the text as a specific instance of the latent relationships that make up our language. The text is an example of english to learn from, it's not a creative work being extended.
+Training a language model, I would argue, is equivalent (in terms of being derivative) to generating a list of the top ten words in a corpus of text. Not really a derived work.
+
+
+	
+mdifrgechd on Oct 25, 2020 | root | parent | next [–]
+
+One possible counterpoint- sample based explanation techniques can tell what training data was most influential in a ML model's prediction, and this has been considered in language models[0]. So you could argue that if there are training examples within a corpus that are having an outsized influence on the model output, then maybe it is derivative. This would be pretty cool to look at - are some GPT or other language model outputs relying strongly on a few sources?
+[0] https://arxiv.org/abs/1810.03611
+
+
+	
+lacker on Oct 25, 2020 | root | parent | prev | next [–]
+
+It is probably not a derived work. To be a derived work it is not enough to simply use the original work in its construction; it must contain major copyrightable elements of the original work. The weights and parameters present in the model do not seem to fit that description; generally you can’t copyright a bunch of numbers. That said, I don’t think this has been confirmed by a major court case yet, and I wouldn’t be surprised if that happens at some point.
+
+	
+fakedang on Oct 26, 2020 | root | parent | next [–]
+
+But for a dynamically learning machine model, can you even copyright the numbers?
+
+	
+mcguire on Oct 25, 2020 | root | parent | prev | next [–]
+
+The question is, "Do the creators of bibliotik have proper licenses to aggregate those books into a dataset?" The dataset is certainly a derived work.
+Edit: https://the-eye.eu/public/Books/humble_books_20180509/
+
+Cue the "they're depriving me of my income" complaints from authors.
+
+
+	
+nix23 on Oct 25, 2020 | root | parent | next [–]
+
+>The dataset is certainly a derived work
+That was not the question.
+
+
+	
+mcguire on Oct 25, 2020 | root | parent | next [–]
+
+"Always impressive how the AI community, both inside large companies and not, seems to assume data just exists for them to use, copyright or personal rights be damned."
+
+	
+nix23 on Oct 25, 2020 | root | parent | next [–]
+
+And you where thinking, lets rephrase that question because it's not already boring and obvious enough?
+
+	
+Spooky23 on Oct 25, 2020 | root | parent | prev | next [–]
+
+If AI has human like rights to read and learn and create derived works, what other rights does it have?
+Perhaps we should figure that before we start a dystopian nightmare of written material.
+
+
+	
+ahoka on Oct 25, 2020 | root | parent | prev | next [–]
+
+Of course it is a derived work.
+
+	
+kerng on Oct 25, 2020 | root | parent | next [–]
+
+Maybe not so obvious. If you read a book, are you a derivative work?
+
+	
+nix23 on Oct 25, 2020 | root | parent | next [–]
+
+Soo reading the Kama Sutra leads to derivative "work" too :)
+
+	
+blackoil on Oct 25, 2020 | root | parent | prev | next [–]
+
+I read a Java book and created programs using knowledge given in the book. Is my program a derived work?
+
+	
+ahoka on Oct 25, 2020 | root | parent | next [–]
+
+A book on Java was written to teach you Java, so it would be foolish to claim any copyright on your program.
+
+	
+nix23 on Oct 25, 2020 | root | parent | prev | next [–]
+
+That opens some interesting questions...
+
+	
+jhauris on Oct 25, 2020 | root | parent | prev | next [–]
+
+IANAL: I think it's pretty clear it's a derived work, the open question afaik is whether it's fair use our not.
+
+	
+isoprophlex on Oct 25, 2020 | root | parent | prev | next [–]
+
+Sweet jesus those instructions go on forever, imagine performing that (without breaking into laughter)
+
+	
+webmaven on Oct 28, 2020 | root | parent | next [–]
+
+I'm pretty sure that it's the same few seconds looped for ten minutes.
+
+	
+yorwba on Oct 25, 2020 | root | parent | prev | next [–]
+
+The official DMCA takedown instructions are actually at http://the-eye.eu/dmca/ and look much less unusual.
+
+	
+yodon on Oct 25, 2020 | root | parent | next [–]
+
+You did notice those files are both hosted on the same site, I trust? I suspect the mp4 speaks much more directly to the actual state of mind and beliefs of the creator(s) of the collection. In the context of this conversation (discussing the attitudes of many in the AI community towards privacy and intellectual property rights in training data), that would make the mp4 the more official statement of policy.
+
+	
+pixl97 on Oct 25, 2020 | parent | prev | next [–]
+
+Eh, this entire comment thread is leading into "RMS was right" territory. Copyright and our machine intelligence future can't mix well at all.
+
+	
+Shared404 on Oct 26, 2020 | root | parent | next [–]
+
+To be fair, I'm pretty sure that's a pretty common sentiment around HN.
+
+	
+minimaxir on Oct 25, 2020 | parent | prev | next [–]
+
+Another related aspect of this is the hiQ vs. LinkedIn decision, which many interpreted as now setting precedent for allowing scraping of public information.
+It's not that simple unfortunately, and companies could still send a C&D/threaten invoking the CFAA, and it would still be a mess. Although in practice it's not worth the effort for companies to sue as long as the scraper is not monetarily benefiting from it (which is how the court case happened).
+
+
+	
+panpanna on Oct 25, 2020 | parent | prev | next [–]
+
+You just described Google.
+
+	
+numpad0 on Oct 25, 2020 | prev | next [–]
+
+I’ve tried some sci-fi nonsense on GPT-2 in the past and it returned flattened out phpBB replies, complete with usernames and headers. So whatever they are trained with must include web crawls.
+
+	
+minimaxir on Oct 25, 2020 | parent | next [–]
+
+GPT-2 was trained on web links linked to from Reddit which would explain your output.
+GPT-3 was trained on the Common Crawl + books.
+
+
+	
+Ninjinka on Oct 25, 2020 | prev | next [–]
+
+I love the-eye.eu, and am excited for this dataset not for machine learning purposes, but for easy display on a low resolution Raspberry Pi OLED. I've looked for many books in .txt file formats before with little luck.
+
+	
+miki123211 on Oct 25, 2020 | prev | next [–]
+
+Blind person here. I don't need fancy shmancy formatting, so this could even come in handy for my own, personal use.
+With that said, does anyone know if the filename structure inside that file makes any sense for a human? Can you find a book by author/title?
+
+Also, what's in that dmca.mp4 file? All I hear is music.
+
+
+	
+SanchoPanda on Oct 25, 2020 | parent | next [–]
+
+The naming of the txt files is of mixed to good usefulness for you. First ten listed as example.
+    - 0/0.4 - Mike Lancaster.epub.txt
+    - 0/0.721 - Gary Webster.epub.txt
+    - 0/01 - Alec Dunn.epub.txt
+    - 0/01 Kai_ Ninja Of Fire (Scholastic) - Greg Farshtey (retail).epub.txt
+    - 0/02 Crescendo -  Becca Fitzpatrick.epub.txt
+    - 0/03 Cole_ Ninja Of Earth (Scholastic) - Greg Farshtey (retail).epub.txt
+    - 0/03 - Jean-Christophe Valtat.epub.txt
+    - 0/04. R. W. Peake - Antony and Cleopatra Part I Antony (Marching With Caesar, Book 4) [Retail].epub.txt
+    - 0/05. R. W. Peake - Antony and Cleopatra Part II Cleopatra (Marching With Caesar, Book 5) [Retail].epub.txt
+    - 0/05 LEGO Ninjago - Snake Attack! (Scholastic) - Tracey West (retail).epub.txt
+Apologies, I had included the wrong corpus originally, the correct list is this one.
+Second edit - Books3 is much cleaner than Books1, I am editing my negative opinion to a more positive one to reflect that.
+
+
+	
+maxwelljoslyn on Oct 25, 2020 | parent | prev | next [–]
+
+The dmca.mp4 file is a video of performance art in which about eight women in fancy dresses chant while vigorously mimicking male masturbation. I didn't watch to the end, but the activity appears to go on for a full ten minutes, and I bet there's a suitable finale.
+Presumably this is a "fuck you" to the DMCA law.
+
+EDIT: there is unfortunately no "suitable finale."
+
+
+	
+sillysaurusx on Oct 25, 2020 | parent | prev | next [–]
+
+Hello! I made the books3 dataset. I am delighted to hear that this might be useful for your personal use.
+I spent four or five days intensely working on the script to convert an .epub to .txt. It's a surprisingly hard problem, so I tried to be correct in every detail. It was important to me that an AI learn the way humans learn.
+
+Therefore, yes, I have found that these books are quite readable. However there are some unique challenges due to the nature of it being .txt, which I would love to help you navigate.
+
+Firstly, the top and the bottom of each file is usually "repetitive". By that I mean, there tends to be a lot of metadata that might be hard to skip.
+
+However, the neat thing is, these aren't actually .txt files -- it's Markdown. And we can take advantage of the markdown format to help you out.
+
+Here is a direct link to "A Mathematician's Apology": https://gist.githubusercontent.com/shawwn/1b399325e866731165...
+
+I like this file as an example, because it illustrates both problems that will be challenging for you. Firstly, the book itself doesn't begin until halfway down the file. There is a ridiculously long "forward" section, written by someone else. Normally this would be easy to skip.
+
+The cheat code I use to read this book is to search for "# 1". Double quote, followed by pound sign (or "hashtag" as the kids say nowadays, ha), followed by a space, then the number one.
+
+That brings you straight to chapter one.
+
+However, not all books use that format for chapter one. So I would recommend searching for a regex, if you can: "beginning of line" followed by pound sign.
+
+That'll usually do the trick. And yes, I find all of these to be quite readable, which I was proud of.
+
+The code is courtesy of Aaron Swartz, by the way. I merely refined it. I am so proud of him for what he was able to achieve during his lifetime. This is "html-to-text" with some modifications.
+
+If you want to convert .epub files to .txt for your own use, the script is here: https://github.com/shawwn/scrap/blob/master/epub2txt-all
+
+It has a rather cryptic name of "epub2txt-all". Sorry about that. But the script itself should be just a matter of running it.
+
+Here are some notes on what I did with this script, in case you find it helpful: https://github.com/soskek/bookcorpus/issues/27
+
+Happy reading! Please let me know any other questions you might have.
+
+By the way, dmca.mp4 is a joke video. Sort of. It's a good question of what is actually going on there. As far as I can tell, it's a dozen professionals who have gathered together to simulate jacking themselves off while singing "ahhhhhhHHhhH" for ten minutes. I don't really know anything beyond that, but the-eye.eu community seems rather proud of it.
+
+
+	
+chews on Oct 25, 2020 | parent | prev | next [–]
+
+I'm gonna take you at your word on blindness and help out here. There are a small assembly women in a semi-circle on stage, singing with stearn and serious faces what is an aria like song piece, all while vigorously gesturing what can universally be described male masterbation. The camera pans into their faces, and back out to reveal the small group of women to be a chorus of fapping.
+
+	
+miki123211 on Oct 25, 2020 | root | parent | next [–]
+
+No need to take me on my word, Googling my username / full name will lead you to a pretty long, detailed and hart to forge online history.
+
+	
+WrtCdEvrydy on Oct 25, 2020 | parent | prev | next [–]
+
+> what's in that dmca.mp4 file? All I hear is music.
+I wish you could see it, here's a basic description.
+
+It begins with a close up of a person singing while performing a gesture of masturbation then zooms out to three people signing and then a full group of around 10 people. It's basically telling whoever is trying to DMCA to jerk themselves off.
+
+
+	
+lolbot on Oct 25, 2020 | parent | prev | next [–]
+
+The filenames are readable and informative. The dmca.mp4 is a 10 minute video of a group of women standing in a half-circle, singing and doing "spank the monkey" gestures.
+
+	
+2fast4you on Oct 25, 2020 | parent | prev | next [–]
+
+I’m downloading it right now, I’ll try to come back and let you know what it looks like.
+Also the dmca.mp4 is a video of like 5 or 10 people singing into microphones while pretending to jack off
+
+
+	
+Voloskaya on Oct 25, 2020 | prev | next [–]
+
+This is very cool and useful, thanks.
+However, saying: "Suppose you wanted to train a world-class GPT model, just like OpenAI. How? You have no data. Now you do. Now everyone does"
+
+Is quite a stretch. You need much, much more that 36GB of quality data to train a world-class GPT model.
+
+
+	
+zurfer on Oct 25, 2020 | parent | next [–]
+
+No, You don't need more. This is compressed text. All of English Wikipedia is roughly 20 GB. You can train amazing and state of the art text models with this data in addition.
+Openai states themselves that they trained on "40GB of internet text"
+
+https://openai.com/blog/better-language-models/
+
+
+	
+Voloskaya on Oct 25, 2020 | root | parent | next [–]
+
+You can indeed train state of the art text models with this data provided you come up with some better architecture that what we currently have. What I am saying is that you cannot train state of the ART "GPT" models like the link is saying.
+Your link is for GPT-2, GPT-3 used much, much more data.
+
+GPT-3 was trained in part on "books2" corpus which is not public but seems to basically be the same thing as this: 200k books * 100k words per book on average * ~3 token per words = 60B tokens, books2 is 55B tokens so it checks out.
+
+The total amount of tokens that GPT-3 was trained on from all sources is a combined 500B tokens, this is merely 10% of what they have.
+
+https://arxiv.org/pdf/2005.14165.pdf
+
+
+	
+bigbubba on Oct 25, 2020 | parent | prev | next [–]
+
+The GPT approach must be very poor; with only a fraction of that information you can train a human to perform better than any GPT model shown thus far. When you look at power burned doing it, the gap is even wider.
+Obviously our wetware is optimized for it and we aren't true blank slates, but the enormous magnitude of the discrepancy makes me think we're on the wrong path.
+
+
+	
+gamblor956 on Oct 25, 2020 | root | parent | next [–]
+
+GPT and most modern "AI" approaches suffer from the same problem: they're just brute force algorithmic approaches that don't mimic "intelligence" in any way. Since there is no understanding, they can't learn in the same way humans or other living creatures do (in general terms, by extrapolation).
+The ironic thing is that ML became popular because we didn't have the technology back then to properly model actual neuronal activity. Now we do, but ML is so established that modeling "true" intelligence is no longer de jure.
+
+
+	
+nialv7 on Oct 25, 2020 | root | parent | next [–]
+
+That's a bold claim to make, given we ourselves don't even understand what understanding, or intelligence is. So how can you support your claim that what GPT-3 does is not intelligence.
+
+	
+bigbubba on Oct 26, 2020 | root | parent | next [–]
+
+Personally I think our common definitions of intelligence are too narrowly defined, we have a bias towards recognizing intelligence similar to our own and a blindspot for intelligent systems unlike our own. I agree with Paul Stamets that mycelia networks may have a form of intelligence quite unlike our own. Large corporations likely have intelligence of their own ('slow AIs') and may in aggregate pursue goals that no individual participant in the organization agrees with (preference falsification demonstrates how such a thing might occur.) Closer to the traditional, I think reptiles may be far more intelligent that we usually give them credit for since we have a mammalian bias against their kind. Mammalians seem to have empathy circuits that fire more often for other mammals, and this inclines us to not consider the possible intelligence of non-mammals.
+So, GPT? I think that's probably a form of intelligence too, but not one that's particularly similar to our own. I also doubt that we'll have much luck getting it to ever perform at near-human levels, when you consider the data and power requirements. I think it's not simply a matter of silicon vs wetware; I think the GPT approach is substantially more different from our own than the hardware it runs on. It's a form of intelligence but that doesn't mean it is like our own.
+
+
+	
+gamblor956 on Oct 25, 2020 | root | parent | prev | next [–]
+
+I'm not the only one. It's industry consensus.
+https://www.technologyreview.com/2020/08/22/1007539/gpt3-ope...
+
+
+	
+nialv7 on Oct 26, 2020 | root | parent | next [–]
+
+That doesn't answer the question.
+
+	
+nialv7 on Oct 25, 2020 | root | parent | prev | next [–]
+
+> with only a fraction of that information you can train a human to perform better than any GPT model shown thus far.
+That's not a fair comparison. The human neural network is not trained _from scratch_. There is a very good fundamental structure we inherited through millions of years of evolution.
+
+
+	
+webmaven on Oct 25, 2020 | root | parent | next [–]
+
+> The human neural network is not trained _from scratch_. There is a very good fundamental structure we inherited through millions of years of evolution.
+It is worth noting that the training data used for training humans has been undergoing it's own optimization process for a while too (arguably for about 40ky, since the Upper Paleolithic Revolution, which is roughly when cultural evolution started taking over). In AI adjusting the training data is called Curriculum Learning. Right now most curriculum learning is done just by adjusting the order of training samples, rather than creating samples specifically optimized to facilitate learning (although GANs might be considered a Socratic approach to the latter, if you squint at it).
+
+
+	
+jononor on Oct 25, 2020 | root | parent | prev | next [–]
+
+Also, humans created all the text and the language and structures used within, for the purpose of communicating - so it is likely to be a good match for our cognitive systems.
+
+	
+bigbubba on Oct 25, 2020 | root | parent | prev | next [–]
+
+Yes, I conceded that we aren't blank slates. I still think we're on the wring track.
+
+	
+monsieurbanana on Oct 25, 2020 | root | parent | prev | next [–]
+
+I'm sure it's much more probable than we're in the wrong path, rather than the good one, but I don't think the amount of information needed by a GPT model can give insights to that.
+Instead, as you pointed out, it's just proof of how efficient our wetware is.
+
+
+	
+minimaxir on Oct 25, 2020 | parent | prev | next [–]
+
+AI models suffer massive diminishing returns on both model size and amount of input text, which fortunately gives fresh models a chance to compete (the benefits of GPT-2/Transformer architectures is that they are capable of scaling indefinitely, but they still have diminishing returns)
+
+	
+Voloskaya on Oct 25, 2020 | root | parent | next [–]
+
+I completly agree, it's a diminishing return but a return nonetheles, so to have a "world class GPT" model with 10% of the data, and 10% (optimistically) of the compute that OpenAI used, you will need some very very impressive innovation elsewhere.
+
+	
+asutekku on Oct 25, 2020 | parent | prev | next [–]
+
+36gb of compressed text is a lot though.
+
+	
+Voloskaya on Oct 25, 2020 | root | parent | next [–]
+
+That's about 50B tokens. It can be a lot depending on what you want to do, but It's 10% of what GPT-3 (the definition of world class GPT model) used.
+
+	
+sillysaurusx on Oct 25, 2020 | root | parent | next [–]
+
+For what it's worth, we're serious about replicating GPT-3. books3 is just one piece. You will notice I never claimed equivalency to GPT-3's training data.
+books3 may be 10%, but The Pile is building the rest:
+
+https://twitter.com/arankomatsuzaki/status/13204141418954874...
+
+https://github.com/EleutherAI/The-Pile
+
+https://www.eleuther.ai/get-involved
+
+https://media.discordapp.net/attachments/735217892517216366/...
+
+https://media.discordapp.net/attachments/735217892517216366/...
+
+
+	
+Voloskaya on Oct 25, 2020 | root | parent | next [–]
+
+And again, I find books3 extremely cool and important work on your part, looking forward to the rest.
+I just have a minor gripe with saying that "now we can train world class GPT model" thanks to that, as you said it's just one piece, and as a typicial HNist I had to point it out :).
+
+
+	
+sillysaurusx on Oct 25, 2020 | root | parent | next [–]
+
+Believe it or not, I appreciate and relate to that sentiment.
+But after spending roughly one year acquiring knowledge related to this work, I feel I can say with a fairly high degree of certainty that this dataset alone is enough to train a model that will achieve "world class" status in some area. Writing books, perhaps.
+
+Which part of my logic do you feel is mistaken, and why? I am actually quite interested to hear thoughts from someone who is very pedantic about such things.
+
+
+	
+Voloskaya on Oct 26, 2020 | root | parent | next [–]
+
+I don't think you are mistaken, I guess it's just that there is just so much information you can convey in a tweet, when I read "world class GPT model" I understand a model that will beat (or equal) on general NLG, which is not what you meant it seems.
+
+	
+WClayFerguson on Oct 25, 2020 | prev | next [–]
+
+Is there a torrent link? Also, I know IPFS is still new, but growing rapidly, so some day each of these books will just have a CID on IPFS, and basically to publish all the books as a list you'd simply publish a list of the CIDs.
+
+	
+sillysaurusx on Oct 26, 2020 | parent | next [–]
+
+No torrent link yet, partly because I trust the-eye. They are fearless in a way that I haven't seen elsewhere.
+Time will tell if fear would have been wise. But for now, I'm curious to see whether "the link will last for years" is true.
+
+If it goes down, I'll append instructions to the original twitter thread on how to access it elsewhere. I also don't have any experience setting up the alternatives you mention; if you do, please feel free to mention it somewhere (twitter DM is always a reliable way to reach me) and I'll highlight it.
+
+As for a torrent link specifically, I did request that the-eye have a torrent ready to go on day one, for just such an eventuality. I was confused when they didn't seem worried. After spending almost an hour describing in detail the kinds of repercussions that might inevitably follow, he simply said that fear does not control him the way it controls me, and that he will ensure it remains. (Probably via torrent, if such a thing becomes necessary.)
+
+I've thought a lot about what he said, and how he phrased it. I decided to trust them to take care of the data. Mostly, though, I made the decision out of intellectual curiosity to see how true their ambition really is.
+
+In the meantime, joining their community on Discord and/or donating to them would be helpful (though to my surprise, they didn't seem too interested in monetary concerns either). http://the-eye.eu/
+
+
+	
+WClayFerguson on Oct 26, 2020 | root | parent | next [–]
+
+I just assumed all of that was in the public domain and legal to download. The only reason I was asking about Torrent was because of the large size of the file, and because I'm a developer working in IPFS world and very interested in decentralization.
+I've developed a web platform that handles books online in a very unique way, and my demo 'book' for that technology was War and Peace:
+
+https://quanta.wiki/n/war-and-peace
+
+but probably if I need to add more books I can go to Project Gutenberg. Anyway, appreciated the reply
+
+
+	
+ralph87 on Oct 25, 2020 | prev | next [–]
+
+The entirety of Library Genesis (about 2.7 million books, fairly poorly curated) can also be downloaded, its somewhere around 40 TB altogether of significantly more recent books.
+
+	
+gwern on Oct 26, 2020 | parent | next [–]
+
+The problem with LibGen, and why EleutherAI has been avoiding it, is that most of it is PDFs and most of the PDFs are scans; OCR layers are typically incredibly crummy. Even if you re-OCR them all with Tesseract or something (which will take quite a while, based on how long Tesseract takes to OCR my books even using parallelism on a Threadripper), the OCR will still be awful data. Do you really want to add that to your training dataset...? Far from obvious, and not when there are so many other pools of text like Arxiv which aren't so insoluble.
+
+	
+ralph87 on Oct 26, 2020 | root | parent | next [–]
+
+It of course depends entirely on what kind of tool you are trying to build. PDFs capture a ton of visual information lost in plain text. I know the parent article is discussing construction of a text model, but what about say, if you were attempting to build the ultimate AI page reflow tool? etc.
+
+	
+GordonS on Oct 25, 2020 | parent | prev | next [–]
+
+In plain text format though?
+AFAIK, most is in PDF, EPUB or mobi format. I'd presume it's not too difficult to extract text from the latter two, but extracting text from PDFs is far from simple, and something you get working for 1 PDF won't necessarily work on another.
+
+
+	
+heimatau on Oct 25, 2020 | parent | prev | next [–]
+
+Is there a way to submit to it? Also, is there a way to download the entire thing?
+
+	
+ralph87 on Oct 26, 2020 | root | parent | next [–]
+
+They release periodic delta torrents of the entire collection. I won't link it here, but it's trivial to find
+
+	
+anthk on Oct 26, 2020 | prev | next [–]
+
+https://textfiles.com
+
+	
+qnsi on Oct 25, 2020 | prev | next [–]
+
+is bibliotik db bigger than libgen? any tips how to get invited?
+
+	
+I_Byte on Oct 25, 2020 | parent | next [–]
+
+I am not sure if bibliotik has more books than libgen by sheer numbers but I am pretty sure that bibliotiks books are of higher quality and better organized at the very least. Oh and if you haven't already got your foot in the door or know somebody who does it is unlikely that people like you and I will simply get invited by some kind stranger on the internet.
+Also, a lot of books that were behind the bibliotik signup wall have been freed by /u/-Archivist.
+
+https://www.reddit.com/r/opendirectories/comments/f2teym/pro...
+
+I personally recommend you start with MyAnonamouse.org. They hold invite interviews twice a week over IRC and I have heard that the community is really welcoming to new users.
+
+https://www.myanonamouse.net/inviteapp.php
+
+
+	
+gilrain on Oct 25, 2020 | prev [–]
+
+What is ".txt format"? I'm genuinely curious what they went with here, but don't want to download 36 GB to find out. There isn't a .txt standard, is there?
+I would hope for UTF-8, but given the old-school, Windows-y .txt extension, it could just as easily be Windows-1252 or something. LF or CRLF line endings?
+
+
+	
+SanchoPanda on Oct 25, 2020 | parent [–]
+
+It looks like they are unix line endings, UTF-8, and markdown formatted.
+
+	
+gilrain on Oct 25, 2020 | root | parent [–]
+
+Thanks!
+
